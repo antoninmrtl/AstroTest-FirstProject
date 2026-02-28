@@ -1,10 +1,12 @@
 ---
-const heading = "My Projects";
-const cta = { text: 'View All', href: '/projects' };
 import Section from "./Section.astro";
 import HeaderSection from "./HeaderSection.astro";
+import projects from '../data/project.json';
+const heading = "My Projects";
+const cta = { text: 'View All', href: '/projects' };
 
-const projects = [
+
+/*const projects = [
     {
         title: "E-commerce Dashbord",
         slug: "project-1",
@@ -29,7 +31,7 @@ const projects = [
         githubURL: "https://github.com/jamesqquick",
         liveSiteURL: "https://jamesqquick.com"
     }
-]
+]*/
 ---
 
 <Section dark={true}>
