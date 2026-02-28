@@ -1,6 +1,7 @@
 ---
 const heading = "My Projects";
 const cta = { text: 'View All', href: '/projects' };
+import Section from "./Section.astro";
 
 const projects = [
     {
@@ -30,7 +31,7 @@ const projects = [
 ]
 ---
 
-<section>
+<Section dark={true}>
     <div class="section-header">
         <h2>
             {heading}
@@ -49,7 +50,7 @@ const projects = [
         }
 
     </div>
-</section>
+</Section>
 
 <style>
 
@@ -102,7 +103,7 @@ const projects = [
             text-decoration: none;
             font-weight: 400;
             color: var(--dark);
-        }
+        }}
 
 
 
